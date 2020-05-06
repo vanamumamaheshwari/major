@@ -9,8 +9,11 @@ public class HibernateTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Hibernate h=new Hibernate();
-		h.setUserId(1);
-		h.setUserName("uma");
+		h.setUserId(3);
+		h.setUserName("third user");
+		h.setjoinedDate(10-12-1998);
+		h.setAddress("balanagar");
+		
 		SessionFactory sessionFactory=new Configuration.configure.buildSessionFactory();
 		Session session=sessionFactory.openSession();
 		session.beginTransaction();
