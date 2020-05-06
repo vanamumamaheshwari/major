@@ -1,5 +1,6 @@
 package mypackage;
 
+import java.beans.Transient;
 import java.util.Date;
 
 //@Entity(name="User Details")
@@ -9,6 +10,8 @@ public class UserDetails {
 	 //	@Column(name="User_Id")
 	 	private int UserId;
 	 	//@Column(name="User_Name")
+	 	//@Basic
+	 	@Transient
 	 	private String UserName;
 	 	public Date getJoinedDate() {
 			return joinedDate;
@@ -22,7 +25,9 @@ public class UserDetails {
 		public void setAddress(String address) {
 			Address = address;
 		}
+		@Temporal (TemporalType.DATE)
 		private Date joinedDate;
+		@Lob
 	 	private String Address;
 	 	public int getUserId() {
 	 		return UserId;
