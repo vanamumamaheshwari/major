@@ -9,6 +9,8 @@ public class UserDetails {
 	 	@Id @GeneratedValue(strategy=GenerationType.AUTO)
 	 //	@Column(name="User_Id")
 	 	private int UserId;
+	 	@Embedded
+	 	private Address address;
 	 	//@Column(name="User_Name")
 	 	private String UserName;
 	 	
