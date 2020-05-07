@@ -11,7 +11,13 @@ public class UserDetails {
 	 	private int UserId;
 	 	@Embedded
 	 	private Address address;
-	 	//@Column(name="User_Name")
+	 	public Address getAddress() {
+			return address;
+		}
+		public void setAddress(Address address) {
+			this.address = address;
+		}
+		//@Column(name="User_Name")
 	 	private String UserName;
 	 	
 	 	public int getUserId() {
