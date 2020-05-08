@@ -1,11 +1,18 @@
-class Static{
-public static void main(String a[])
-{
-Abc.show();
+package org.javabrains.in;
+
+public class Static {
+	static String s="hello world";
+	/*static {
+		System.out.println("iam in static");
+	}*/
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("iam in main"+s);
+
+	}
+	/*static {
+		System.out.println("iam in low static");
+	}*/
+
 }
-}
-class Abc{
-public static void show()
-{
-System.out.print("hello");
-}}
