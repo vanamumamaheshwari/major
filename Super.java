@@ -23,6 +23,7 @@ class B extends A{
 		System.out.println("in const b");
 	}
 	public B(int i) {
+		super(i);
 		System.out.println("in const b super");
 		
 	}
