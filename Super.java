@@ -1,30 +1,29 @@
-import java.io.*;
-import java.util.*;
-class Square{
-public Square()
-{
-System.out.println("square");
+package org.javabrains.in;
+
+public class Super {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B b=new B(5);
+
+	}
+
 }
-public Square(int i)
-{
-System.out.println("square1");
+class A{
+	public A() {
+		System.out.println("in const a");
+	}
+	public A(int i) {
+		System.out.println("in const a super");
+		
+	}
 }
-}
-class Cube extends Square{
-public Cube()
-{
-System.out.println("cube");
-}
-public Cube(int i)
-{
-super(i);
-System.out.println("cube1");
-}
-}
-class Super{
-public static void main(String a[])
-{
-Cube obj=new Cube();
-Cube obj1=new Cube(5);
-}
+class B extends A{
+	public B() {
+		System.out.println("in const b");
+	}
+	public B(int i) {
+		System.out.println("in const b super");
+		
+	}
 }
