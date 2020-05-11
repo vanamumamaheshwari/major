@@ -9,7 +9,8 @@ s.call();
 s.msg();
 s.song();
 s.video();
-	}
+s.move();
+}
 
 }
   abstract class Rani{
@@ -20,6 +21,9 @@ s.video();
 	  public abstract void msg();
 	  public abstract void video();
 	  public abstract void song();
+	  public void move() {
+		  System.out.println("in move");
+	  }
 	  
   }
   abstract class Pooja extends Rani{
