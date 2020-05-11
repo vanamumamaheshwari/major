@@ -16,6 +16,9 @@ public class Stringop {
 		int l1=s3.length();
 		System.out.println("uppercase:"+s3);
 		System.out.println("LENGTH:"+l1);
+		s3=s3.toLowerCase();
+		System.out.println("Lowercase:"+s3);
+		
 	}
 
 }
