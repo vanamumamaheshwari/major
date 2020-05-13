@@ -10,10 +10,11 @@ public class Error {
 		int i,j,k=0;
 		//int a[]=new int[4];
 		//BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		Scanner sc=new Scanner(System.in);
+		//Scanner sc=new Scanner(System.in);
 		i=8;
+		j=0;
 		try {
-			j=sc.nextInt();
+			//j=sc.nextInt();
 		k=i/j;
 		System.out.println("bye");
 		
@@ -27,7 +28,10 @@ public class Error {
 		catch(Exception e) {
 			System.out.println(e);
 		}
-		System.out.println(k);
+		//System.out.println(k);
+		finally {
+			System.out.println("final");
+		}
 
 	}
 
