@@ -12,7 +12,7 @@ public class Error {
 		k=i/j;
 		}
 		catch(Exception e) {
-			System.out.println(e);
+			System.out.println("cannot divide by zero");
 		}
 		System.out.println(k);
 
