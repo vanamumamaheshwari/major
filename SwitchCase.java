@@ -1,56 +1,25 @@
-import java.util.Scanner;
+package org.javabrains.in;
 
-import java.io.*;
+public class SwitchCase {
 
-public class SwitchCase{
-
-     
-public static void main(String []args){
-                 
-Scanner sc=new Scanner(System.in);
-       
-int i=sc.nextInt();
-         
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int i=0;
 switch(i){
-             
 case 0:
-                 
-System.out.print("zero");
-                 
-break;
-                  
+	System.out.println("zero");
+	break;
 case 1:
-                 
-System.out.print("one");
-                 
-break;
-                  
+	System.out.println("one");
+	break;
 case 2:
-                 
-System.out.print("two");
-                 
-break;
-                  
-case 3:
-                 
-System.out.print("three");
-                 
-break;
-                  
-case 4:
-                 
-System.out.print("four");
-                 
-break;
-                 
-default:
-                   
-System.out.print("some number");
-                 
-         
+	System.out.println("two");
+	break;
+	default:
+		System.out.println("some no");
+	
+	
 }
-      
-     
-}
+	}
 
 }
