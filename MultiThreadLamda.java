@@ -20,6 +20,10 @@ public class MultiThreadLamda {
 			}
 		
 	});
+		t1.setName("Hi Thread");
+		t2.setName("Hello Thread");
+		System.out.println(t1.getName());
+		System.out.println(t2.getName());
 		t1.start();
 		try {Thread.sleep(1000);} catch(Exception e) {}
 		t2.start();
