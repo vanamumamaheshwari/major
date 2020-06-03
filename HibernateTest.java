@@ -1,17 +1,12 @@
-package mypackage;
-
-import java.lang.module.Configuration;
-
-import javax.crypto.SecretKeyFactory;
+package org.javabrains.in;
 
 public class HibernateTest {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Hibernate h=new Hibernate();
+		HibernateTest h=new HibernateTest();
 		//h.setUserId(3);
 		h.setUserName("third user");
-	Hibernate h1=new Hibernate();
+	HibernateTest h1=new HibernateTest();
 	h1.setUserName("fourth user");
 	Address add=new Address();
 	add.setStreet("street name");
