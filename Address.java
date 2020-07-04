@@ -1,5 +1,8 @@
-package mypackage;
+package org.iobrains;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class Address {
 	private String street;
 	private String city;
@@ -29,6 +32,4 @@ public class Address {
 	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
-	
-
 }
