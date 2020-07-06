@@ -1,5 +1,4 @@
 package org.hibernate.iobrains;
-import java.util.Date;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -13,29 +12,24 @@ public class HibernateTest {
 		// TODO Auto-generated method stub
       UserDetails user=new UserDetails();
       user.setUsername("pooja");
-     /* user.setAddress("poja address");
-      user.setJoinedDate(new Date());
-      user.setDescription("1st user");*/
-     // UserDetails user1=new UserDetails();
-     // user1.setUsername("uma");
-    /*  user1.setAddress("uma address");
-      user1.setJoinedDate(new Date());
-      user1.setDescription("2st user");*/
       Address ad=new Address();
-      ad.setStreet("street name");
-      ad.setCity("city name");
-      user.setHomeAddress(ad);
-      Address ad1=new Address();
-      ad1.setStreet("street name");
-      ad1.setCity("city name");
-      user.setOfficeAddress(ad1);
-      SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory(); 
-      Session session=sessionFactory.openSession();
-      session.beginTransaction();
-      session.save(user);
-   //   session.save(user1);
-      session.getTransaction().commit();
-      session.close();
+     ad.setStreet("1st street");
+     ad.setCity("1st city");
+     ad.setState("1st state");
+     ad.setPincode("500042");
+     Address ad1=new Address();
+     ad1.setStreet("2nd street");
+     ad1.setCity("2nd city");
+     ad1.setState("2nd state");
+     ad1.setPincode("500041");
+     user.getListOfAddresses().add(ad);
+     user.getListOfAddresses().add(ad1);
+     SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory(); 
+     Session session=sessionFactory.openSession();
+     session.beginTransaction();
+     session.save(user);
+     session.getTransaction().commit();
+     session.close();
       
 	}
 
