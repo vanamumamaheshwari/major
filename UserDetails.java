@@ -7,6 +7,8 @@ import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.Table;
 @Entity
 @Table(name="USER_DETAILS")
@@ -16,7 +18,10 @@ public class UserDetails {
 	private int userid;
 	private String username;
 	@ElementCollection
-	private Set<Address> listOfAddresses=new HashSet();
+	@JoinTable(name="USER_DETAILS",
+	   joinColumns = @JoinColumn(name="USER_ID")
+	)
+	private Set<Address> listOfAddresses=new HashSet<Address>();
 	
 	public Set<Address> getListOfAddresses() {
 		return listOfAddresses;
